@@ -1,0 +1,21 @@
+.user-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .user-list {
+        justify-content: center;
+        /* Center align items on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .user-list {
+        flex-direction: column;
+        /* Stack items vertically on even smaller screens */
+    }
+}
